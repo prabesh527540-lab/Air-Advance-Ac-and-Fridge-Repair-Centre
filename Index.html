@@ -1,106 +1,25 @@
-<!DOCTYPE html>  <html lang="en">  
-<head>  
-<meta charset="UTF-8">  
-<title>Air Advance Repair Centre</title>  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- CSS Inline -->  <style>  
-body {margin:0;font-family:'Poppins',sans-serif;background:#f5f7fa;color:#333;}  
-header{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#0d6efd;color:white;position:sticky;top:0;z-index:1000;}  
-header img{height:50px;}  
-nav a{color:white;text-decoration:none;margin-left:15px;font-weight:bold;}  
-nav a:hover{text-decoration:underline;}  
-.hero{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1581092334494-1f93b8dbb6b1");background-size:cover;background-position:center;color:white;text-align:center;padding:80px 20px;}  
-.hero h1{font-size:32px;margin-bottom:10px;}  
-.hero p{font-size:16px;margin-bottom:20px;}  
-.hero .btn{display:inline-block;background:#28a745;color:white;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:bold;}  
-section{padding:30px 15px;max-width:1100px;margin:auto;}  
-.section-title{text-align:center;margin-bottom:25px;}  
-.section-title h2{font-size:26px;}  
-.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.08);margin-bottom:20px;}  
-.card img{width:100%;height:180px;object-fit:cover;}  
-.card div{padding:15px;}  
-.contact-box{background:#0d6efd;color:white;border-radius:15px;padding:25px;text-align:center;margin-bottom:20px;}  
-.contact-box a{display:inline-block;margin-top:10px;background:white;color:#0d6efd;padding:10px 20px;border-radius:25px;text-decoration:none;font-weight:bold;}  
-footer{background:#111;color:#aaa;text-align:center;padding:12px;font-size:14px;}  
-#whatsapp-btn{position:fixed;bottom:25px;right:25px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:22px;text-decoration:none;z-index:100;box-shadow:0 4px 6px rgba(0,0,0,0.2);}  
-</style>  </head>  
-<body>  <!-- Header -->  <header>  
-<img src="logo.png" alt="Logo">  
-<nav>  
-<a href="#home" data-en>Home</a>  
-<a href="#services" data-en>Services</a>  
-<a href="#contact" data-en>Contact</a>  
-<a href="#home" data-np>मुख्य पृष्ठ</a>  
-<a href="#services" data-np>सेवाहरू</a>  
-<a href="#contact" data-np>सम्पर्क</a>  
-<select onchange="toggleLang(this.value)">  
-<option value="en">English</option>  
-<option value="np">नेपाली</option>  
-</select>  
-</nav>  
-</header>  <!-- Hero / Home -->  <div id="home" class="hero">  
-<h1 data-en>Air Advance AC & Fridge Repair Centre</h1>  
-<p data-en>Professional AC, Fridge & Washing Machine Repair Service</p>  
-<h1 data-np>एयर एडभान्स एसी र फ्रिज रिपेयर सेन्टर</h1>  
-<p data-np>प्रोफेशनल एसी, फ्रिज र वाशिंग मेशिन मर्मत सेवा</p>  
-<a class="btn" href="tel:0500000000">📞 Call Now</a>  
-</div>  <!-- Services -->  <section id="services">  
-<div class="section-title">  
-<h2 data-en>Our Services</h2>  
-<h2 data-np>हाम्रो सेवा</h2>  
-</div>  <div class="card">  
-<img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9">  
-<div>  
-<h3 data-en>AC Repair</h3>  
-<h3 data-np>एसी मर्मत</h3>  
-<p data-en>Installation, gas refilling & maintenance</p>  
-<p data-np>स्थापना, ग्याँस भर्ने र मर्मत</p>  
-</div>  
-</div>  <div class="card">  
-<img src="https://images.unsplash.com/photo-1581579184683-0a2d6b5b4f84">  
-<div>  
-<h3 data-en>Fridge Repair</h3>  
-<h3 data-np>फ्रिज मर्मत</h3>  
-<p data-en>Cooling issues, compressor & gas service</p>  
-<p data-np>कुलिङ समस्या, कम्प्रेसर र ग्याँस सेवा</p>  
-</div>  
-</div>  <div class="card">  
-<img src="https://images.unsplash.com/photo-1598300053654-96c1c5d86bb0">  
-<div>  
-<h3 data-en>Washing Machine</h3>  
-<h3 data-np>वाशिंग मेशिन</h3>  
-<p data-en>All brands repair & maintenance</p>  
-<p data-np>सबै ब्राण्डको मर्मत र मर्मत</p>  
-</div>  
-</div>  
-</section>  <!-- Contact -->  <section id="contact">  
-<div class="section-title">  
-<h2 data-en>Contact Us</h2>  
-<h2 data-np>सम्पर्क गर्नुहोस्</h2>  
-</div>  <div class="contact-box">  
-<p data-en>Call / WhatsApp: <b>0500000000</b></p>  
-<p data-np>फोन / व्हाट्सएप: <b>0500000000</b></p>  
-<a href="tel:0500000000">📞 Call Now</a>  
-</div>  <div class="section-title">  
-<h3 data-en>Our Location</h3>  
-<h3 data-np>हाम्रो स्थान</h3>  
-</div>  
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.890889555199!2d55.30472211500178!3d25.26972258388102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434c3a1e2d9f%3A0x123456789abcdef!2sAbu%20Dhabi%2C%20UAE!5e0!3m2!1sen!2snp!4v1674000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
-</section>  <!-- WhatsApp Button -->  <a href="#" id="whatsapp-btn" target="_blank">💬</a>
+1. **Website Name / Brand:** Air Advance Repair Centre
+2. **Logo:** Include a placeholder for logo (logo.png)
+3. **Sections:** 
+   - Home / Hero Section
+   - Services Section (AC Repair, Fridge Repair, Washing Machine Repair)
+   - Contact Section with Phone, WhatsApp, and Google Map embed
+4. **Services Details:**
+   - AC Repair: Installation, gas refilling & maintenance
+   - Fridge Repair: Cooling issues, compressor & gas service
+   - Washing Machine: All brands repair & maintenance
+5. **Language Support:** English and Nepali toggle (switch between languages)
+6. **WhatsApp Floating Button:** Fixed at bottom right, opens https://wa.me/0500000000
+7. **Hero Section Call-to-Action:** Call Now button (tel:0500000000)
+8. **Design:**
+   - Modern premium look with cards for services
+   - Clean fonts (Poppins)
+   - Blue / green accent colors
+   - Responsive for mobile and desktop
+9. **CSS & JS:** Inline inside the HTML file (no external files)
+10. **Footer:** © 2026 Air Advance Repair Centre. All rights reserved (English + Nepali)
+11. **Google Map Embed:** Use Abu Dhabi, UAE as location placeholder
+12. **File Name:** index.html
+13. **Additional Features:** Sticky header, smooth scrolling to sections, hover effects on buttons and cards
 
-<!-- JS Inline -->  <script>  
-const whatsappNumber="0500000000";  
-document.getElementById("whatsapp-btn").href="https://wa.me/"+whatsappNumber;  
-  
-function toggleLang(lang){  
-if(lang==='np'){  
-document.querySelectorAll('[data-en]').forEach(el=>el.style.display="none");  
-document.querySelectorAll('[data-np]').forEach(el=>el.style.display="block");  
-}else{  
-document.querySelectorAll('[data-en]').forEach(el=>el.style.display="block");  
-document.querySelectorAll('[data-np]').forEach(el=>el.style.display="none");  
-}}  
-</script>  <footer>  
-<p data-en>© 2026 Air Advance Repair Centre. All rights reserved.</p>  
-<p data-np>© 2026 एयर एडभान्स रिपेयर सेन्टर। सबै अधिकार सुरक्षित।</p>  
-</footer>  </body>  
-</html>  
+Output the **complete HTML code** that can be copy-pasted into index.html and deployed directly on GitHub Pages. Ensure **all sections, CSS, and JS are included inline** for a single-file solution.
